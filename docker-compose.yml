@@ -1,12 +1,11 @@
-version: "3.8"
-
+version: "3.9"
 services:
-  app:
-    build:
-      context: .
-    ports:
-      - "8000:80"
-    depends_on:
-      - db
-    environment:
-      DATABASE_URL: "sqlite:///./sqlitedb/sqlitedata.db"
+ useritem-api-service:
+  image: my-API
+  ports:
+    - "8000:8000"
+  volumes:
+    - sqlite_useritems_volume:/code/sqlitedb
+
+volumes:
+  sqlite_useritems_volume:
