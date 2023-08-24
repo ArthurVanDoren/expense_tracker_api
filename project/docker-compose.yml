@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "sqlite:///./sqlitedb/sqlitedata.db"
