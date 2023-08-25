@@ -1,7 +1,11 @@
-version: "3"
-
+version: "3.9"
 services:
-  api:
-    image: expense_tracker_api:latest
-    ports:
-      - "8000:8000"
+ useritem-api-service:
+  image: my-API
+  ports:
+    - "8000:8000"
+  volumes:
+    - sqlite_useritems_volume:/code/sqlitedb
+
+volumes:
+  sqlite_useritems_volume:
