@@ -32,8 +32,7 @@ Screenshots:
 ![01](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/837ca5b9-ab52-4cb8-ad29-8c690f0f08c2)
 
 api docs:
-
-![05 jgp](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/e02b56e5-9074-48e9-a9a0-20e53676dc79)
+![14](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/74f515bc-8709-4a54-95ef-266bc60fe476)
 ![06](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/06d2f855-3390-4634-8e2f-e44de6ad1437)
 ![07](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/8e27c026-6ffc-46bb-9bf6-f3df618fe320)
 ![08](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/79fa5bea-20df-4bf6-b09e-b713dbb407cf)
@@ -42,3 +41,4 @@ api docs:
 ![11](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/a1e24722-79cb-409c-863f-58122c2c91fa)
 ![12](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/500f8c1a-7545-43b3-8ecf-1a53d33f7513)
 ![13](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/72b9fd6b-8b0e-4ad8-95c1-76e682810265)
+![15](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/ca64bf81-b721-4e30-afa5-eaefd8b99722)
