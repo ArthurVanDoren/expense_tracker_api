@@ -13,25 +13,25 @@ link naar de index.html: https://regal-sherbet-63b834.netlify.app/
 - @app.get("/users/{user_id}", response_model=schemas.User) hiermee kan ik de data van een users bekijken adhv de user id
 - @app.get("/items/", response_model=list[schemas.Item]) hiermee kan ik al de items bekijken
 
-app.post:
+### app.post:
 - @app.post("/users/", response_model=schemas.User) zo kan ik een nieuw user aanmaken
 - @app.post("/users/{user_id}/items/", response_model=schemas.Item) zo kan ik een nieuw item aanmaken
 
-app.delete:
+### app.delete:
 - @app.delete("/items/{item_id}") zo verwijder ik een item 
 
-app.put:
+### app.put:
 - @app.put("/users/{user_id}", response_model=schemas.User) zo pas ik een user aan
 
 
-Screenshots:
+## Screenshots:
 
 ![04](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/aa7c1b59-9fec-42f1-bc95-d43c0db2e9dd)
 ![03](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/bffeb12d-37e7-4a5b-b5a2-0bc7fbf8591c)
 ![02](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/4e803405-3de0-4f4d-b5d2-25b14e37db97)
 ![01](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/837ca5b9-ab52-4cb8-ad29-8c690f0f08c2)
 
-api docs:
+## api docs:
 ![14](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/74f515bc-8709-4a54-95ef-266bc60fe476)
 ![06](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/06d2f855-3390-4634-8e2f-e44de6ad1437)
 ![07](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/8e27c026-6ffc-46bb-9bf6-f3df618fe320)
