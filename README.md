@@ -7,7 +7,7 @@ link naar de index.html: https://regal-sherbet-63b834.netlify.app/
 
 ## end points:
 
-app.get:
+### app.get:
 - @app.get("/") hiermee kan ik de webpagina bekijken
 - @app.get("/users/", response_model=list[schemas.User]) dit lijst al de users op en dan nog data van de users
 - @app.get("/users/{user_id}", response_model=schemas.User) hiermee kan ik de data van een users bekijken adhv de user id
