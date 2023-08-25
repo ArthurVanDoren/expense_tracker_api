@@ -8,20 +8,20 @@ link naar de index.html: https://regal-sherbet-63b834.netlify.app/
 end points:
 
 app.get:
-@app.get("/") hiermee kan ik de webpagina bekijken
-@app.get("/users/", response_model=list[schemas.User]) dit lijst al de users op en dan nog data van de users
-@app.get("/users/{user_id}", response_model=schemas.User) hiermee kan ik de data van een users bekijken adhv de user id
-@app.get("/items/", response_model=list[schemas.Item]) hiermee kan ik al de items bekijken
+- @app.get("/") hiermee kan ik de webpagina bekijken
+- @app.get("/users/", response_model=list[schemas.User]) dit lijst al de users op en dan nog data van de users
+- @app.get("/users/{user_id}", response_model=schemas.User) hiermee kan ik de data van een users bekijken adhv de user id
+- @app.get("/items/", response_model=list[schemas.Item]) hiermee kan ik al de items bekijken
 
 app.post:
-@app.post("/users/", response_model=schemas.User) zo kan ik een nieuw user aanmaken
-@app.post("/users/{user_id}/items/", response_model=schemas.Item) zo kan ik een nieuw item aanmaken
+- @app.post("/users/", response_model=schemas.User) zo kan ik een nieuw user aanmaken
+- @app.post("/users/{user_id}/items/", response_model=schemas.Item) zo kan ik een nieuw item aanmaken
 
 app.delete:
-@app.delete("/items/{item_id}") zo verwijder ik een item 
+- @app.delete("/items/{item_id}") zo verwijder ik een item 
 
 app.put:
-@app.put("/users/{user_id}", response_model=schemas.User) zo pas ik een user aan
+- @app.put("/users/{user_id}", response_model=schemas.User) zo pas ik een user aan
 
 
 Screenshots:
