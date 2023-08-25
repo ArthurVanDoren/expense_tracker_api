@@ -1,0 +1,24 @@
+name: Deploy to Okteto
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the deployment on
+
+jobs:
+  deploy-to-okteto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Okteto CLI
+        uses: okteto/setup-okteto@v1
+
+      - name: Deploy to Okteto
+        env:
+          OKTETO_TOKEN: ${{ secrets.OKTETO_TOKEN }}
+        run: |
+          okteto namespace
+          okteto stack deploy -f okteto.yml

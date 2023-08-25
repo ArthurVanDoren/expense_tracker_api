@@ -1,0 +1,33 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the workflow on
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Build and push Docker image
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          IMAGE_TAG: latest  # Change this to the desired tag
+        run: |
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+          docker buildx build -t your-docker-image:$IMAGE_TAG .
+
+      - name: Push image to GitHub Container Registry
+        env:
+          CR_PAT: ${{ secrets.CR_PAT }}
+        run: |
+          echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+          docker push your-docker-image:$IMAGE_TAG

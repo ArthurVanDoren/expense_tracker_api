@@ -1,0 +1,3 @@
+name: your-api
+image: expense_tracker_api:latest
+command: ["python", "app.py"]
