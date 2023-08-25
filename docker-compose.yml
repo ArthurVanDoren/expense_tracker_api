@@ -1,7 +1,7 @@
 version: "3.9"
 services:
  useritem-api-service:
-  image: my-API
+  image: expense_tracker_api
   ports:
     - "8000:8000"
   volumes:
