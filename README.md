@@ -5,7 +5,7 @@ Verder heb ik ook nog een webpagina gemaakt, dit is makkelijk om te gebruiken. E
 
 link naar de index.html: https://regal-sherbet-63b834.netlify.app/
 
-end points:
+#end points:
 
 app.get:
 - @app.get("/") hiermee kan ik de webpagina bekijken
