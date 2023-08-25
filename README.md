@@ -20,6 +20,9 @@ app.post:
 app.delete:
 @app.delete("/items/{item_id}")
 
+app.put:
+@app.put("/users/{user_id}", response_model=schemas.User)
+
 
 Screenshots:
 
