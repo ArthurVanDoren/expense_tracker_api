@@ -5,6 +5,22 @@ Verder heb ik ook nog een webpagina gemaakt, dit is makkelijk om te gebruiken. E
 
 link naar de index.html: https://regal-sherbet-63b834.netlify.app/
 
+end points:
+
+app.get:
+@app.get("/") 
+@app.get("/users/", response_model=list[schemas.User])
+@app.get("/users/{user_id}", response_model=schemas.User)
+@app.get("/items/", response_model=list[schemas.Item])
+
+app.post:
+@app.post("/users/", response_model=schemas.User)
+@app.post("/users/{user_id}/items/", response_model=schemas.Item)
+
+app.delete:
+@app.delete("/items/{item_id}")
+
+
 Screenshots:
 
 ![04](https://github.com/ArthurVanDoren/expense_tracker_api/assets/91262433/aa7c1b59-9fec-42f1-bc95-d43c0db2e9dd)
